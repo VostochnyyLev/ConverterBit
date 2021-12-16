@@ -5,11 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Калькулятор Биткоина</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="shortcut icon" href="./img/faviconBTC.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <div class="wrapper">
 
+        <header class="header">
+            <img class="header__logo" src="./img/logobtc.png" alt="Logo">
+
+            <h1 class="header__heading">
+                <a href="./index.html">Калькулятор Биткоина</a>
+            </h1>
+        </header>
+
+        <main class="main">
+
+            <!-- Первая ячейка -->
+            <div class="main__form">
+
+                <div class="main__form-item">
+
+                    <input onkeyup="render()" id="bitcoin" min="0" placeholder="Курс 1 BTC=48,185 USD" type="number">
+
+                    <div class="main__form-logo">
+                        <img class="main__form-img" src="./img/formlogoBTC.png" alt="formlogobtc">
+
+                        <p class="main__form-text">BTC</p>
+                    </div>
+
+                </div>
+
+                <!-- Вторая ячейка -->
+                <div class="main__form-item">
+
+                    <input onkeyup="render()" id="dollar" min="0" placeholder="Курс 1 USD=27 UAH" type="number">
+
+                    <div class="main__form-logo">
+                        <img class="main__form-img" src="./img/logousa.png" alt="logousa">
+                        <p class="main__form-text">USD</p>
+
+                    </div>
+                </div>
+
+                <!-- Третья ячейка -->
+                <div class="main__form-item">
+
+                    <input onkeyup="render()" id="gryvna" min="0" placeholder="Курс 1 USD=27 UAH" type="number">
+
+                    <div class="main__form-logo">
+                        <img class="main__form-img" src="./img/logouah.png" alt="logouah">
+                        <p class="main__form-text">UAH</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <p class="footer__text">Created by Oleksandr Yaremenko</p>
+        <p class="footer__text">All rights reserved @2021</p>
+    </footer>
+
+    <script src="./js/formulaconverter.js"></script>
+    <script src="./js/converter.js"></script>
 </body>
 
 </html>

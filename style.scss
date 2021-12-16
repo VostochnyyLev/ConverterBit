@@ -1,0 +1,79 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #d2691e;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #f4a460;
+  padding: 2%;
+}
+
+.header__logo {
+  width: 30%;
+}
+
+.header__heading {
+  font-size: 4rem;
+}
+
+.header__heading a {
+  text-decoration: none;
+  color: #808080;
+}
+// header__end
+
+// main__start
+
+.main {
+  width: 78%;
+  margin: 0 20%;
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.main__form-item {
+  margin-top: 1.6%;
+}
+
+.main__form-item input {
+  height: 2rem;
+  outline: none;
+  font-size: 1.2rem;
+  width: 49.2rem;
+}
+
+.main__form-img {
+  position: relative;
+  left: 46.6rem;
+  bottom: 2.3rem;
+  width: 3.7%;
+}
+
+.main__form-text {
+  position: relative;
+  left: 44.5rem;
+  bottom: 4.2rem;
+  width: 0;
+}
+// main__end
+
+//footer__start
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #f4a460;
+}
