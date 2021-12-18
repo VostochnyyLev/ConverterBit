@@ -60,11 +60,22 @@ body {
   margin-top: 1.6%;
 }
 
-.main__form-item input {
+input {
   height: 2rem;
   outline: none;
   font-size: 1.2rem;
   width: 49.2rem;
+}
+
+.main__form-value {
+  outline: 0px;
+  background-color: #ffffff;
+  height: 30px;
+  width: 785px;
+  font-size: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__form-img {

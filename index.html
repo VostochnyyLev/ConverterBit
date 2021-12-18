@@ -45,7 +45,7 @@
                 <!-- Вторая ячейка -->
                 <div class="main__form-item">
 
-                    <input onkeyup="render()" id="dollar" min="0" placeholder="Курс 1 USD=27 UAH" type="number">
+                    <div contenteditable="true" onkeyup="render()" id="dollar" class="main__form-value"></div>
 
                     <div class="main__form-logo">
                         <img class="main__form-img" src="./img/logousa.png" alt="logousa">
@@ -57,7 +57,7 @@
                 <!-- Третья ячейка -->
                 <div class="main__form-item">
 
-                    <input onkeyup="render()" id="gryvna" min="0" placeholder="Курс 1 USD=27 UAH" type="number">
+                    <div contenteditable="true" onkeyup="render()" id="gryvna" class="main__form-value"></div>
 
                     <div class="main__form-logo">
                         <img class="main__form-img" src="./img/logouah.png" alt="logouah">
@@ -68,18 +68,21 @@
 
             </div>
 
-
         </main>
 
 
     </div>
+
     <hr>
+
     <footer class="footer">
+
         <p class="footer__text">Created by Oleksandr Yaremenko</p>
+
         <p class="footer__text">All rights reserved @2021</p>
+
     </footer>
 
-    <script src="./js/formulaconverter.js"></script>
     <script src="./js/converter.js"></script>
 </body>
 
