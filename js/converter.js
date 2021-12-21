@@ -1,14 +1,23 @@
-function render() {
+function renderBit() {
   const bitCoin = document.getElementById("bitcoin").value;
-
-  const rateUa = 1300995;
   const rateUsd = 48185;
-  let convertedUa = bitCoin * rateUa;
-  let convertedUsd = bitCoin * rateUsd;
-  console.log(bitCoin);
-  console.log(convertedUsd);
-  console.log(convertedUa);
+  // let usd = bitCoin * rateUsd;
+  // let usd = m(bitCoin, rateUsd);
+  const rateUa = 1300995;
+  // let ua = bitCoin * rateUa;
+  // let ua = m(bitCoin, rateUa);
+  renderUsd(m(bitCoin, rateUsd));
+  renderUa(m(bitCoin, rateUa));
+}
 
-  document.getElementById("dollar").innerHTML = convertedUsd;
-  document.getElementById("gryvna").innerHTML = convertedUa;
+function m(a, b) {
+  return a * b;
+}
+
+function renderUsd(value) {
+  document.getElementById("dollar").innerHTML = value;
+}
+
+function renderUa(value) {
+  document.getElementById("gryvna").innerHTML = value;
 }

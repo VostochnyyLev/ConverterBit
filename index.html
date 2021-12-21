@@ -32,7 +32,8 @@
 
                 <div class="main__form-item">
 
-                    <input onkeyup="render()" id="bitcoin" min="0" placeholder="Курс 1 BTC=48,185 USD" type="number">
+                    <input type="number" onkeyup="renderBit()" id="bitcoin" min="0" placeholder="Курс 1 BTC=48,185 USD"
+                        type="number">
 
                     <div class="main__form-logo">
                         <img class="main__form-img" src="./img/formlogoBTC.png" alt="formlogobtc">
@@ -45,7 +46,7 @@
                 <!-- Вторая ячейка -->
                 <div class="main__form-item">
 
-                    <div contenteditable="true" onkeyup="render()" id="dollar" class="main__form-value"></div>
+                    <div contenteditable="true" onkeyup="renderUsd()" id="dollar" class="main__form-value"></div>
 
                     <div class="main__form-logo">
                         <img class="main__form-img" src="./img/logousa.png" alt="logousa">
@@ -57,7 +58,7 @@
                 <!-- Третья ячейка -->
                 <div class="main__form-item">
 
-                    <div contenteditable="true" onkeyup="render()" id="gryvna" class="main__form-value"></div>
+                    <div contenteditable="true" onkeyup="renderUa()" id="gryvna" class="main__form-value"></div>
 
                     <div class="main__form-logo">
                         <img class="main__form-img" src="./img/logouah.png" alt="logouah">
