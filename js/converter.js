@@ -8,6 +8,16 @@ function renderBit() {
   // let ua = m(bitCoin, rateUa);
   renderUsd(m(bitCoin, rateUsd));
   renderUa(m(bitCoin, rateUa));
+  negativeNumber(bitCoin);
+}
+
+function negativeNumber(value) {
+  if (value < 0) {
+    document.getElementById("dollar").innerHTML =
+      "Введите значение 0 или больше нуля";
+    document.getElementById("gryvna").innerHTML =
+      "Введите значение 0 или больше нуля";
+  }
 }
 
 function m(a, b) {
