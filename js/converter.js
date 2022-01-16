@@ -1,4 +1,5 @@
-function renderBit() {
+// function renderBit()
+const renderBit = () => {
   const bitCoin = document.getElementById("bitcoin").value;
   const rateUsd = 48185;
   // let usd = bitCoin * rateUsd;
@@ -9,25 +10,22 @@ function renderBit() {
   renderUsd(m(bitCoin, rateUsd));
   renderUa(m(bitCoin, rateUa));
   negativeNumber(bitCoin);
-}
+};
 
-function negativeNumber(value) {
+// function negativeNumber(value)
+const negativeNumber = (value) => {
   if (value <= 0) {
     document.getElementById("dollar").innerHTML =
       "Введите значение 0 или больше нуля";
     document.getElementById("gryvna").innerHTML =
       "Введите значение 0 или больше нуля";
   }
-}
+};
 
-function m(a, b) {
-  return a * b;
-}
+const m = (a, b) => a * b;
 
-function renderUsd(value) {
-  document.getElementById("dollar").innerHTML = value;
-}
+const renderUsd = (value) =>
+  (document.getElementById("dollar").innerHTML = value);
 
-function renderUa(value) {
-  document.getElementById("gryvna").innerHTML = value;
-}
+const renderUa = (value) =>
+  (document.getElementById("gryvna").innerHTML = value);
