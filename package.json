@@ -1,0 +1,19 @@
+{
+  "name": "converterbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VostochnyyLev/ConverterBit.git"
+  },
+  "author": "OleksandrYar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VostochnyyLev/ConverterBit/issues"
+  },
+  "homepage": "https://github.com/VostochnyyLev/ConverterBit#readme"
+}
